@@ -20,6 +20,22 @@
     matchMedia('(min-width: 900px)').addEventListener('change', function (m) { if (m.matches) setNav(false); });
   }
 
+  /* header action appears once the hero action has scrolled away */
+  var bar = doc.querySelector('.bar');
+  var heroAct = doc.querySelector('.hero-actions');
+  if (bar && heroAct) {
+    bar.classList.add('no-cta');
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (en) {
+        var e = en[0];
+        var past = !e.isIntersecting && e.boundingClientRect.bottom < 0;
+        bar.classList.toggle('no-cta', !past);
+      }, { threshold: 0 }).observe(heroAct);
+    } else {
+      bar.classList.remove('no-cta');
+    }
+  }
+
   /* language dialog */
   var dlg = doc.getElementById('lang-dialog');
   doc.querySelectorAll('[data-lang]').forEach(function (b) {
@@ -53,7 +69,7 @@
     var data = {
       coffee: { name: 'Homemade pistachio latte', line: 'Our signature, made in house.', img: 'assets/img/pistachio-latte.jpg', w: 787, h: 1400, alt: 'An iced pistachio latte in a clear cup with the V60 mark, on a honey wood table.', href: 'menu.html#coffee' },
       filter: { name: 'Fresh filter coffee', line: 'Brewing moments, one cup at a time.', img: 'assets/img/filter-pourover.jpg', w: 788, h: 1400, alt: 'A V60 dripper over a carafe of ice, filter coffee dripping through.', href: 'menu.html#coffee' },
-      matcha: { name: 'Coco-Matcha Cloud', line: 'The combination you did not know you needed.', img: 'assets/img/coco-matcha-cloud.jpg', w: 1043, h: 1200, alt: 'Coco-Matcha Cloud, an iced matcha in a clear cup on a honey wood table.', href: 'menu.html#matcha' },
+      matcha: { name: 'Coco-Matcha Cloud', line: 'The combination you did not know you needed this summer.', img: 'assets/img/coco-matcha-cloud.jpg', w: 1043, h: 1200, alt: 'Coco-Matcha Cloud, an iced matcha in a clear cup on a honey wood table.', href: 'menu.html#matcha' },
       fizz: { name: 'Raspberry Fizz and Passionfruit Island', line: 'Our newest mojito madness.', img: 'assets/img/raspberry-passion.jpg', w: 1012, h: 1800, alt: 'A purple and a yellow refresher on a white stool.', href: 'menu.html#refreshers' },
       bagel: { name: 'Bagels', line: 'Layered up and ready to devour.', img: 'assets/img/bagel-close.jpg', w: 1200, h: 1200, alt: 'A bagel torn open, layered with salmon and greens.', href: 'menu.html#bites' }
     };

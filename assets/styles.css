@@ -52,7 +52,9 @@ html.nogl body{background:#B9BEC2 url("img/steel-table.jpg") center/cover fixed}
 .links{display:flex;gap:32px;margin-left:auto}
 .links a,.lang{font-size:var(--step-small);font-weight:600;text-decoration:none;min-height:44px;display:inline-flex;align-items:center;color:var(--ink)}
 .lang{background:none;border:0;padding:0;cursor:pointer}
-.bar .btn{min-height:44px;padding:0 20px}
+.bar .btn{min-height:44px;padding:0 20px;animation:cta-in .35s var(--ease) both}
+.bar.no-cta .btn{display:none}
+@keyframes cta-in{from{opacity:0;transform:translateX(10px)}to{opacity:1;transform:none}}
 .burger{display:none;background:none;border:0;padding:0 4px;min-height:44px;font-size:var(--step-small);font-weight:600;cursor:pointer;color:var(--ink)}
 .panel-nav{display:none}
 
@@ -266,6 +268,7 @@ dialog .btn{margin-top:24px}
 .hero-photo img,.find-top .ph img{animation:drift 2.4s var(--ease) both}
 
 @media (prefers-reduced-motion:reduce){
+  .bar .btn{animation:none}
   .js .rv,.js .hero-fade{opacity:1;transform:none;transition:none}
   .js .ln>span{transform:none;transition:none}
   .hero-photo img,.find-top .ph img{animation:none}
@@ -284,6 +287,7 @@ dialog .btn{margin-top:24px}
   .links,.bar .lang{display:none}
   .burger{display:inline-flex;align-items:center;margin-left:0}
   .bar .btn{margin-left:auto}
+  .bar.no-cta .burger{margin-left:auto}
   .panel-nav{position:fixed;left:0;right:0;top:var(--hh);z-index:39;isolation:isolate;padding:8px var(--m) 24px;display:none;flex-direction:column}
   .panel-nav.open{display:flex}
   .panel-nav a,.panel-nav button{font-family:"Big Shoulders",sans-serif;font-weight:800;text-transform:uppercase;font-size:var(--step-head);line-height:1;text-decoration:none;padding:12px 0;min-height:56px;background:none;border:0;text-align:left;cursor:pointer;color:var(--ink)}
