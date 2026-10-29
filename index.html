@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 <title>V60 Social Space and Coffee</title>
 <meta name="description" content="Specialty coffee, matcha and bagels in Zamalek, at AUC and on the North Coast. Brewed with heart.">
-<meta name="theme-color" content="#E9E8E4">
+<meta name="theme-color" content="#C4C9CC">
 <link rel="icon" href="assets/logo-dark.svg" type="image/svg+xml">
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/big-shoulders-latin-800-normal.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/public-sans-latin-400-normal.woff2" crossorigin>
@@ -13,12 +13,14 @@
 <link rel="preload" as="image" href="assets/img/hero-stools.jpg" fetchpriority="high">
 <style>html.fl body{opacity:0}body{transition:opacity .25s ease}</style>
 <script>document.documentElement.classList.add('fl','js');(function(){var d=document,h=d.documentElement,t;function done(){clearTimeout(t);h.classList.remove('fl');requestAnimationFrame(function(){h.classList.add('go')})}t=setTimeout(done,1200);if(d.fonts&&d.fonts.load){Promise.all([d.fonts.load('800 1em "Big Shoulders"'),d.fonts.load('400 1em "Public Sans"'),d.fonts.load('600 1em "Public Sans"')]).then(done,done)}else{done()}})();</script>
-<link rel="stylesheet" href="assets/fonts.css?v=1">
-<link rel="stylesheet" href="assets/styles.css?v=1">
+<link rel="stylesheet" href="assets/fonts.css?v=6">
+<link rel="stylesheet" href="assets/styles.css?v=6">
 </head>
 <body>
+<canvas id="steel-bg" aria-hidden="true"></canvas>
 
 <header class="bar">
+  <canvas class="steel-win" aria-hidden="true"></canvas>
   <a class="brand" href="index.html" aria-label="V60 Social Space and Coffee, home"><img src="assets/logo-dark.svg" alt="V60" width="82" height="34"></a>
   <nav class="links" aria-label="Main">
     <a href="menu.html">Menu</a>
@@ -30,6 +32,7 @@
   <button class="burger" type="button" aria-expanded="false" aria-controls="panel-nav">Menu</button>
 </header>
 <nav class="panel-nav" id="panel-nav" aria-label="Main">
+  <canvas class="steel-win" aria-hidden="true"></canvas>
   <a href="menu.html">Menu</a>
   <a href="find.html">Find us</a>
   <a href="find.html#catering">Catering</a>
@@ -85,10 +88,12 @@
     <h2 class="head rv" id="lobby-h">Inside the lobby</h2>
     <p class="rv" style="--d:80ms">Brushed steel, cobalt seating and chrome chairs, with The Heart Blend on the shelves.</p>
   </div>
+  <div class="lobby-plate">
   <div class="lobby-grid">
     <figure class="a rv"><img src="assets/img/lobby-shelves-chairs.jpg" width="975" height="1300" alt="Grey leather and chrome chairs under a plaster wall of half-moon steel shelves holding white boxes of The Heart Blend and glass V60 drippers." loading="lazy"></figure>
     <figure class="b rv" style="--d:80ms"><img src="assets/img/lobby-sofa-steel.jpg" width="604" height="1300" alt="A cobalt velvet sofa with a brushed steel side table against a steel wall with a board of Polaroids." loading="lazy"></figure>
     <figure class="c rv" style="--d:160ms"><img src="assets/img/lobby-steel-table-coffee.jpg" width="1240" height="880" alt="An iced black coffee in a white cup on a round brushed steel table, seen from above, between two grey leather stools." loading="lazy"></figure>
+  </div>
   </div>
 </section>
 
@@ -142,7 +147,7 @@
       <p class="note">Coffee is delivered to your doorstep too. V60 is on Talabat.</p>
     </figure>
     <div class="rv" style="--d:100ms">
-      <div class="tile-sky"><img src="assets/logo-dark.svg" width="748" height="309" alt="V60" loading="lazy"></div>
+      <div class="tile-cobalt"><img src="assets/logo-light.svg" width="748" height="309" alt="V60" loading="lazy"></div>
       <dl class="facts">
         <div><dt>Zamalek</dt><dd>28 Hassan Assem St.</dd></div>
         <div><dt>AUC</dt><dd>Hill House</dd></div>
@@ -236,6 +241,6 @@
   <button class="btn" type="button" data-close>Got it</button>
 </dialog>
 
-<script src="assets/app.js?v=1" defer></script>
+<script src="assets/app.js?v=6" defer></script>
 </body>
 </html>
