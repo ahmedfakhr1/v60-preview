@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<title>V60 Social Space and Coffee</title>
+<meta name="description" content="Specialty coffee, matcha and bagels in Zamalek, at AUC and on the North Coast. Brewed with heart.">
+<meta name="theme-color" content="#E9E8E4">
+<link rel="icon" href="assets/logo-dark.svg" type="image/svg+xml">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/big-shoulders-latin-800-normal.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/public-sans-latin-400-normal.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/public-sans-latin-600-normal.woff2" crossorigin>
+<link rel="preload" as="image" href="assets/img/hero-stools.jpg" fetchpriority="high">
+<style>html.fl body{opacity:0}body{transition:opacity .25s ease}</style>
+<script>document.documentElement.classList.add('fl','js');(function(){var d=document,h=d.documentElement,t;function done(){clearTimeout(t);h.classList.remove('fl');requestAnimationFrame(function(){h.classList.add('go')})}t=setTimeout(done,1200);if(d.fonts&&d.fonts.load){Promise.all([d.fonts.load('800 1em "Big Shoulders"'),d.fonts.load('400 1em "Public Sans"'),d.fonts.load('600 1em "Public Sans"')]).then(done,done)}else{done()}})();</script>
+<link rel="stylesheet" href="assets/fonts.css?v=1">
+<link rel="stylesheet" href="assets/styles.css?v=1">
+</head>
+<body>
+
+<header class="bar">
+  <a class="brand" href="index.html" aria-label="V60 Social Space and Coffee, home"><img src="assets/logo-dark.svg" alt="V60" width="82" height="34"></a>
+  <nav class="links" aria-label="Main">
+    <a href="menu.html">Menu</a>
+    <a href="find.html">Find us</a>
+    <a href="find.html#catering">Catering</a>
+  </nav>
+  <button class="lang" type="button" data-lang>EN / عربي</button>
+  <a class="btn" href="https://www.talabat.com/egypt/v60-coffee" target="_blank" rel="noopener">Order on Talabat</a>
+  <button class="burger" type="button" aria-expanded="false" aria-controls="panel-nav">Menu</button>
+</header>
+<nav class="panel-nav" id="panel-nav" aria-label="Main">
+  <a href="menu.html">Menu</a>
+  <a href="find.html">Find us</a>
+  <a href="find.html#catering">Catering</a>
+  <button type="button" data-lang>EN / عربي</button>
+</nav>
+
+<main>
+<section class="hero" aria-labelledby="top">
+  <div class="hero-copy">
+    <h1 id="top"><span class="ln"><span>Brewed with</span></span><span class="ln"><span style="--d:110ms">heart</span></span></h1>
+    <p class="lead hero-fade">Specialty coffee, matcha and bagels in Zamalek, at AUC and on the North Coast.</p>
+    <div class="hero-actions hero-fade">
+      <a class="btn" href="https://www.talabat.com/egypt/v60-coffee" target="_blank" rel="noopener">Order on Talabat</a>
+      <a class="tlink" href="menu.html">See the menu</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="assets/img/hero-stools.jpg" width="1440" height="1800" alt="Three drinks on three white concrete stools in hard sun: a brown iced drink, a pink one and an iced matcha, each in a cup with the black V60 mark.">
+  </div>
+</section>
+
+<section class="intro" aria-labelledby="intro-h">
+  <div class="wrap">
+    <h2 class="head rv" id="intro-h">A coffee lobby made to stay</h2>
+    <div class="caps rv" style="--d:80ms">
+      <p>A modern lifestyle and co-working space with a specialty coffee lobby.</p>
+      <p>Filter coffee, lattes, matcha, refreshers, bagels and pastries.</p>
+    </div>
+  </div>
+  <figure class="pano rv" style="--d:120ms">
+    <img src="assets/img/brunch-plates.jpg" width="1440" height="1440" alt="Croissants, a pistachio pastry and a latte on stone-grey plates on a honey wood table, seen from above." loading="lazy">
+  </figure>
+</section>
+
+<section aria-labelledby="band-h">
+  <div class="band-head">
+    <h2 class="head rv" id="band-h">Every cup finds a stool</h2>
+  </div>
+  <div class="band">
+    <figure class="panel">
+      <img src="assets/img/latte-stool.jpg" width="1400" height="1400" alt="A latte with swan latte art in a grey V60 cup on top of a white concrete stool." loading="lazy">
+      <figcaption class="panel-title">Set down in the sun</figcaption>
+    </figure>
+    <figure class="panel"><img src="assets/img/iced-matcha-stool.jpg" width="1012" height="1800" alt="An iced matcha on a white stool beside two more stools." loading="lazy"></figure>
+    <figure class="panel"><img src="assets/img/strawberry-matcha.jpg" width="1120" height="1400" alt="Two strawberry matcha drinks in a cardboard carrier on a stool." loading="lazy"></figure>
+    <figure class="panel"><img src="assets/img/drinks-stool-brown.jpg" width="1120" height="1400" alt="A brown iced drink topped with foam, on a white stool against grey stone." loading="lazy"></figure>
+  </div>
+  <p class="band-cap rv">Latte art, iced matcha, strawberry matcha and iced coffee, each set down on its own stool.</p>
+</section>
+
+<section class="pick" aria-labelledby="pick-h">
+  <h2 class="head rv" id="pick-h">What are you after?</h2>
+  <fieldset class="chips rv" data-picker>
+    <legend class="sr">Pick a mood</legend>
+    <input type="radio" name="mood" id="m-coffee" value="coffee" checked><label for="m-coffee">Coffee</label>
+    <input type="radio" name="mood" id="m-filter" value="filter"><label for="m-filter">Filter</label>
+    <input type="radio" name="mood" id="m-matcha" value="matcha"><label for="m-matcha">Matcha</label>
+    <input type="radio" name="mood" id="m-fizz" value="fizz"><label for="m-fizz">Refreshers</label>
+    <input type="radio" name="mood" id="m-bagel" value="bagel"><label for="m-bagel">Bagels</label>
+  </fieldset>
+  <div class="pick-photo rv" style="--d:100ms">
+    <img src="assets/img/pistachio-latte.jpg" width="787" height="1400" alt="An iced pistachio latte in a clear cup with the V60 mark, on a honey wood table." data-pick-img loading="lazy">
+  </div>
+  <div class="pick-out" aria-live="polite">
+    <h3 data-pick-name>Homemade pistachio latte</h3>
+    <p data-pick-line>Our signature, made in house.</p>
+    <a class="tlink" href="menu.html#coffee" data-pick-link>See it on the menu</a>
+  </div>
+</section>
+
+<section aria-labelledby="seq-h">
+  <div class="seq-intro">
+    <h2 class="head rv" id="seq-h">Brunch, poured and plated</h2>
+    <p class="rv" style="--d:80ms">Rise and brunch: croissants, bagels and a good pour, out in the sun.</p>
+  </div>
+  <div class="seq">
+    <figure>
+      <img src="assets/img/croissants.jpg" width="1280" height="1600" alt="Croissants and pastries on stone plates beside a latte, in hard daylight." loading="lazy">
+      <figcaption>Brunch is always a good idea.</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/img/espresso-pour.jpg" width="1400" height="1400" alt="Two iced lattes pulling on the espresso machine." loading="lazy">
+      <figcaption>Coffee is a science, and the people making it turn it into art.</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/img/two-drinks-stools.jpg" width="1120" height="1400" alt="An iced coffee and an iced matcha on two white stools." loading="lazy">
+      <figcaption>What's your go to, caffeine or matcha?</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="about" aria-labelledby="about-h">
+  <h2 class="head rv" id="about-h">Where to find V60</h2>
+  <p class="lead rv" style="--d:80ms">Pull up a stool in Zamalek, at the American University in Cairo, or on the North Coast. Or have it come to you.</p>
+  <div class="tiles">
+    <figure class="photo-wide rv" style="margin:0">
+      <img src="assets/img/sign-palms-booth.jpg" width="1012" height="1800" alt="The V60 sign in dark letters with gold edges above a coffee stand, under palm trees and blue sky." loading="lazy">
+      <p class="note">Coffee is delivered to your doorstep too. V60 is on Talabat.</p>
+    </figure>
+    <div class="rv" style="--d:100ms">
+      <div class="tile-sky"><img src="assets/logo-dark.svg" width="748" height="309" alt="V60" loading="lazy"></div>
+      <dl class="facts">
+        <div><dt>Zamalek</dt><dd>28 Hassan Assem St.</dd></div>
+        <div><dt>AUC</dt><dd>Hill House</dd></div>
+        <div><dt>North Coast</dt><dd>Seashore Hydepark</dd></div>
+        <div><dt>Delivery</dt><dd><a href="https://www.talabat.com/egypt/v60-coffee" target="_blank" rel="noopener">Talabat</a></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="sheet-ground" aria-labelledby="sheet-h">
+  <figure class="sheet-photo"><img src="assets/img/coco-matcha-cloud.jpg" width="1043" height="1200" alt="Coco-Matcha Cloud, an iced matcha in a clear cup on a honey wood table." loading="lazy"></figure>
+  <div class="sheet rv">
+    <h2 id="sheet-h">The menu</h2>
+    <p class="sub">Brewed with heart.</p>
+    <div class="sheet-group">
+      <h3>Coffee</h3>
+      <ul>
+        <li><b>Homemade pistachio latte</b><span>Our signature.</span></li>
+        <li><b>Latte</b><span>Poured with latte art.</span></li>
+        <li><b>Iced latte</b><span>Layered over ice.</span></li>
+        <li><b>Filter coffee</b><span>Fresh filter coffee, one cup at a time.</span></li>
+      </ul>
+    </div>
+    <div class="sheet-group">
+      <h3>Matcha</h3>
+      <ul>
+        <li><b>Coco-Matcha Cloud</b><span>Matcha with coconut.</span></li>
+        <li><b>Strawberry Matcha</b><span>Matcha meets strawberry.</span></li>
+        <li><b>Salted Caramel Matcha Foam</b><span>Topped with foam.</span></li>
+      </ul>
+    </div>
+    <div class="sheet-group">
+      <h3>Refreshers</h3>
+      <ul>
+        <li><b>Raspberry Fizz</b><span>Mojito madness.</span></li>
+        <li><b>Passionfruit Island</b><span>Mojito madness.</span></li>
+        <li><b>Passionfruit Soda</b><span>A summer refresher.</span></li>
+      </ul>
+    </div>
+    <div class="sheet-group">
+      <h3>Bites</h3>
+      <ul>
+        <li><b>Bagels</b><span>Layered up and ready to devour.</span></li>
+        <li><b>Croissants</b><span>Baked for brunch.</span></li>
+        <li><b>Croffles and cookies</b><span>Sweet, to share with your bestie.</span></li>
+      </ul>
+    </div>
+    <div class="sheet-end">
+      <span>28 Hassan Assem St., Zamalek</span>
+      <a class="tlink" href="menu.html">Browse the menu with photos</a>
+    </div>
+  </div>
+</section>
+
+<div class="end">
+  <div class="strip">
+    <img src="assets/img/iced-granite.jpg" width="1200" height="1200" alt="An iced coffee with foam on speckled black granite." loading="lazy">
+    <img src="assets/img/iced-lattes-pair.jpg" width="1200" height="1200" alt="Two iced lattes with cold foam on a grey table." loading="lazy">
+    <img src="assets/img/iced-cream-stool.jpg" width="960" height="1200" alt="An iced coffee topped with cream on a grey leather stool." loading="lazy">
+  </div>
+  <section class="field" aria-labelledby="cta-h">
+    <div>
+      <h2 class="sr" id="cta-h">Come sip with us</h2>
+      <p class="say rv">Come sip with us at 28 Hassan Assem St in Zamalek, or <a href="https://www.talabat.com/egypt/v60-coffee" target="_blank" rel="noopener">order on Talabat</a> and have it brought to you.</p>
+      <p class="small rv" style="--d:80ms">Looking for AUC or the North Coast? <a href="find.html">Find every V60.</a><br>Catering for your campus or event? <a href="find.html#catering">Say hello.</a></p>
+    </div>
+    <img src="assets/logo-light.svg" width="748" height="309" alt="V60" loading="lazy">
+  </section>
+
+  <footer class="card" aria-label="V60 contact">
+    <div>
+      <h2>Brewed with heart</h2>
+      <p class="msg">Bring a laptop, a friend or both.</p>
+    </div>
+    <div class="addr">
+      <a href="https://www.instagram.com/v60.space/" target="_blank" rel="noopener">Instagram @v60.space</a>
+      <a href="https://www.threads.com/@v60.space" target="_blank" rel="noopener">Threads @v60.space</a>
+      <a href="https://www.talabat.com/egypt/v60-coffee" target="_blank" rel="noopener">Order on Talabat</a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=V60+Social+Space+and+Coffee+28+Hassan+Assem+St+Zamalek" target="_blank" rel="noopener">28 Hassan Assem St., Zamalek</a>
+    </div>
+    <div class="stamp"><img src="assets/img/latte-swan.jpg" width="675" height="1200" alt="" loading="lazy"></div>
+    <p class="imprint">Website concept by Ahmed Fakhreldin.</p>
+  </footer>
+  <div class="tail"></div>
+</div>
+</main>
+
+<dialog id="lang-dialog" aria-label="Language">
+  <p>Arabic is not in this preview. It will be live in the final version.</p>
+  <button class="btn" type="button" data-close>Got it</button>
+</dialog>
+
+<script src="assets/app.js?v=1" defer></script>
+</body>
+</html>
